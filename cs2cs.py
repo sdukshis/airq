@@ -5,6 +5,8 @@ Computes UTM projection from WGS84 coordinates.
 http://home.hiwaay.net/~taylorc/toolbox/geography/geoutm.html
 """
 
+__all__ = ['LatLonToUTMXY', ]
+
 from math import sin, cos, radians, sqrt, tan, floor
 
 import numpy
@@ -123,20 +125,22 @@ def MapLatLonToXY(phi, lambda_, lambda0):
     return (x, y)
 
 
-def LatLonToUTMXY(lat, lon, zone):
+def LatLonToUTMXY(lat, lon):
     """
     Converts a latitude/longitude pair to x and y coordinates in the
     Universal Transverse Mercator projection.
 
     Inputs:
-       lat - Latitude of the point, in radians.
-       lon - Longitude of the point, in radians.
+       lat - Latitude of the point, in angles.
+       lon - Longitude of the point, in angles.
 
     Returns:
        xy - A 2-element tuple where the UTM x and y values will be stored.
     """
 
-    x, y = MapLatLonToXY(lat, lon, UTMCentralMeridian(zone))
+    zone = LonToZone(lon)
+
+    x, y = MapLatLonToXY(radians(lat), radians(lon), UTMCentralMeridian(zone))
     x = x * k0 + 500000.0
     y = y * k0
     if y < 0.0:
@@ -145,11 +149,13 @@ def LatLonToUTMXY(lat, lon, zone):
     return (x, y)
 
 
+def LonToZone(lon):
+    return floor((lon + 180.0) / 6.0) + 1.0
+
+
 class TestCase(object):
     def compare(self, lat, lon, x, y):
-        zone = floor((lon + 180.0) / 6.0) + 1.0
-
-        resx, resy = LatLonToUTMXY(radians(lat), radians(lon), zone)
+        resx, resy = LatLonToUTMXY(lat, lon)
         assert numpy.isclose(resx, x)
         assert numpy.isclose(resy, y)
 
