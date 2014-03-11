@@ -24,6 +24,11 @@ class Airport(object):
             if sid['name'] == name:
                 return Airline(direction='SID', data=sid)
 
+    def get_star(self, name):
+        assert type(name) is str
+        for star in self.data['STAR']:
+            if star['name'] == name:
+                return Airline(direction='STAR', data=star)
 
 class Airline(object):
 
@@ -62,34 +67,62 @@ class Airline(object):
 
 
 if __name__ == "__main__":
-    data = yaml.load(open('airports/AMS.air').read())
-    AMS = Airport(data=data)
-    AMGOD2X = AMS.get_sid(name='ANDIK 2E')
-    # pprint(AMGOD2X.points)
-    p = AMGOD2X.points
+    data = yaml.load(open('airports/SVO.air').read())
+    SVO = Airport(data=data)
 
-    def dist(p1, p2):
-        return math.sqrt((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2)
+    pylab.figure()
 
-    # for i in range(len(p) - 1):
-    #     print(dist(p[i], p[i+1])/1000/1.852)
+    for star in SVO.data['STAR']:
+        p = SVO.get_star(star['name']).points
 
-    x = map(lambda p: p[0], p)
-    y = map(lambda p: p[1], p)
+        x = map(lambda p: p[0], p)
+        y = map(lambda p: p[1], p)
 
-    tck,u = interpolate.splprep([x,y],s=0)
-    unew = numpy.arange(0,1.01,0.01)
-    out = interpolate.splev(unew,tck)
+        tck,u = interpolate.splprep([x,y],s=0, k=2)
+        unew = numpy.arange(0,1.01,0.01)
+        out = interpolate.splev(unew,tck)
+
+        pylab.plot(x,y,'x',out[0],out[1])
+
+    for sid in SVO.data['SID']:
+        p = SVO.get_sid(sid['name']).points
+
+        x = map(lambda p: p[0], p)
+        y = map(lambda p: p[1], p)
+
+        tck,u = interpolate.splprep([x,y],s=0, k=2)
+        unew = numpy.arange(0,1.01,0.01)
+        out = interpolate.splev(unew,tck)
+
+        pylab.plot(x,y,'x',out[0],out[1])
+
+    pylab.show()
+    # AMGOD2X = AMS.get_sid(name='ANDIK 2E')
+    # # pprint(AMGOD2X.points)
+    # p = AMGOD2X.points
+
+    # def dist(p1, p2):
+    #     return math.sqrt((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2)
+
+    # # for i in range(len(p) - 1):
+    # #     print(dist(p[i], p[i+1])/1000/1.852)
+
+    # x = map(lambda p: p[0], p)
+    # y = map(lambda p: p[1], p)
+
+    # tck,u = interpolate.splprep([x,y],s=0)
+    # unew = numpy.arange(0,1.01,0.01)
+    # out = interpolate.splev(unew,tck)
 
     
-    pylab.figure()
-    pylab.plot(x,y,'x',out[0],out[1])
-    pylab.show()
+    # pylab.figure()
+    # pylab.plot(x,y,'x',out[0],out[1])
+    # pylab.show()
 
     # print out
     # f = interpolate.interp1d(x, y)
 
-    # xnew = np.arange(0,9, 0.1)
+    # xnew = numpy.arange(0,9, 0.1)
     # ynew = f(xnew)   # use interpolation function returned by `interp1d`
     # plt.plot(x, y, 'o', xnew, ynew, '-')
     # plt.show()
