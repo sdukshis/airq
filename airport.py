@@ -2,9 +2,11 @@
 Airport class
 """
 
+from __future__ import division, print_function
 import re
 import yaml
 import math
+from pprint import pprint
 
 from scipy import interpolate
 import numpy
@@ -12,6 +14,8 @@ import pylab
 
 from cs2cs import LatLonToUTMXY
 
+QUANTIM_STATE_LENGTH = 6790
+SEPARATION_MINIMA = 9260
 
 class Airport(object):
 
@@ -29,6 +33,7 @@ class Airport(object):
         for star in self.data['STAR']:
             if star['name'] == name:
                 return Airline(direction='STAR', data=star)
+
 
 class Airline(object):
 
@@ -65,38 +70,136 @@ class Airline(object):
 
         return (lat, lon)
 
+    def get_states(self, length):
+
+        qstate_x = []
+        qstate_y = []
+
+        x = map(lambda p: p[0], self.points)
+        y = map(lambda p: p[1], self.points)
+
+        tck, u = interpolate.splprep([x, y], s=0, k=2)
+        unew = numpy.arange(0, 1.00, 0.01)
+        out = interpolate.splev(unew, tck)
+
+        curr_len = 0.0
+        for i in range(len(out[0]) - 1):
+            curr_len += distance(out[0][i + 1], out[1][i + 1],
+                                 out[0][i], out[1][i])
+
+            if curr_len > length:
+                qstate_x.append(out[0][i])
+                qstate_y.append(out[1][i])
+                curr_len = 0
+
+        return (qstate_x, qstate_y)
+
+    def get_points(self):
+        x = map(lambda p: p[0], self.points)
+        y = map(lambda p: p[1], self.points)
+
+        tck, u = interpolate.splprep([x, y], s=0, k=2)
+        unew = numpy.arange(0, 1.00, 0.01)
+        out = interpolate.splev(unew, tck)
+
+        return out
+
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    return math.sqrt(dx*dx + dy*dy)
+
+def intersections(star, sid, separation_minima):
+    star_x, star_y = star.get_states(QUANTIM_STATE_LENGTH)
+    sid_x, sid_y = sid.get_states(QUANTIM_STATE_LENGTH)
+
+    intersec = []
+
+    for i in range(len(star_x)):
+        for j in range(len(sid_x)):
+            if distance(star_x[i], star_y[i],
+                        sid_x[j], sid_y[j]) < separation_minima:
+                intersec.append((i,j))
+
+    return intersec
+
+
+def topology_complexity(star, sid):
+    p = []
+    for i in intersections(star, sid, SEPARATION_MINIMA):
+        l = len(star.get_states(QUANTIM_STATE_LENGTH)[0]) - i[0]+ 1
+        k = i[1] + 1
+        plk = min(l, k)/(l*k)
+        p.append(plk)
+
+
+    q = map(lambda i: 1 - i, p)
+
+    kappa = 0.0
+    for i in range(len(p)):
+        prod = 1.0
+        for j in range(len(q)):
+            if j != i:
+                prod *= q[j]
+        kappa += p[i]*prod
+
+    return kappa
 
 if __name__ == "__main__":
     data = yaml.load(open('airports/SVO.air').read())
     SVO = Airport(data=data)
 
-    pylab.figure()
+    besta_01 = SVO.get_star('BESTA 01')
+    besta_4g = SVO.get_sid('BESTA 4G')
 
-    for star in SVO.data['STAR']:
-        p = SVO.get_star(star['name']).points
+    print("kappa = %g" % topology_complexity(besta_01, besta_4g))
+    # pylab.figure()
 
-        x = map(lambda p: p[0], p)
-        y = map(lambda p: p[1], p)
+    # points1 = besta_01.get_points()
+    # points2 = besta_4g.get_points()
 
-        tck,u = interpolate.splprep([x,y],s=0, k=2)
-        unew = numpy.arange(0,1.01,0.01)
-        out = interpolate.splev(unew,tck)
+    # pylab.plot(points1[0], points1[1], 'r', points2[0], points2[1], 'g')
+    
+    # star_x, star_y = besta_01.get_states(QUANTIM_STATE_LENGTH)
+    # sid_x, sid_y = besta_4g.get_states(QUANTIM_STATE_LENGTH)
 
-        pylab.plot(x,y,'x',out[0],out[1])
+    # pylab.plot(star_x, star_y, 'x')
+    # pylab.plot(sid_x, sid_y, 'x')
+    # for i in intersections(besta_01, besta_4g, SEPARATION_MINIMA):
+    #     xs = [star_x[i[0]], sid_x[i[1]]]
+    #     ys = [star_y[i[0]], sid_y[i[1]]]
+    #     pylab.plot(xs, ys, 'b')
+    #     print("%d - %d" % (i[0], i[1])) 
+    # pylab.show()
+    # for star in SVO.data['STAR']:
+    #     p = SVO.get_star(star['name']).points
 
-    for sid in SVO.data['SID']:
-        p = SVO.get_sid(sid['name']).points
+    #     x = map(lambda p: p[0], p)
+    #     y = map(lambda p: p[1], p)
 
-        x = map(lambda p: p[0], p)
-        y = map(lambda p: p[1], p)
+    #     tck, u = interpolate.splprep([x, y], s=0, k=2)
+    #     unew = numpy.arange(0, 1.00, 0.01)
+    #     out = interpolate.splev(unew, tck)
 
-        tck,u = interpolate.splprep([x,y],s=0, k=2)
-        unew = numpy.arange(0,1.01,0.01)
-        out = interpolate.splev(unew,tck)
+    #     qstate_x, qstate_y = SVO.get_star(star['name']).quantum_states(6790)
 
-        pylab.plot(x,y,'x',out[0],out[1])
+    #     pylab.plot(qstate_x, qstate_y, 'x', out[0], out[1])
 
-    pylab.show()
+    # for sid in SVO.data['SID']:
+    #     p = SVO.get_sid(sid['name']).points
+
+    #     x = map(lambda p: p[0], p)
+    #     y = map(lambda p: p[1], p)
+
+    #     tck, u = interpolate.splprep([x,y], s=0, k=2)
+    #     unew = numpy.arange(0, 1.01, 0.01)
+    #     out = interpolate.splev(unew, tck)
+
+    #     qstate_x, qstate_y = SVO.get_sid(sid['name']).quantum_states(6790)
+        
+    #     pylab.plot(qstate_x, qstate_y, 'x', out[0], out[1])
+
+    # pylab.show()
     # AMGOD2X = AMS.get_sid(name='ANDIK 2E')
     # # pprint(AMGOD2X.points)
     # p = AMGOD2X.points
@@ -126,7 +229,3 @@ if __name__ == "__main__":
     # ynew = f(xnew)   # use interpolation function returned by `interp1d`
     # plt.plot(x, y, 'o', xnew, ynew, '-')
     # plt.show()
-
-
-
-
