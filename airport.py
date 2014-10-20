@@ -10,9 +10,11 @@ from pprint import pprint
 
 from scipy import interpolate
 import numpy
-import pylab
+# import pylab
 
 from cs2cs import LatLonToUTMXY
+from trajectory import trajectory
+from qmodel import complexity2throughput
 
 QUANTIM_STATE_LENGTH = 6790
 SEPARATION_MINIMA = 9260
@@ -28,6 +30,14 @@ class Airport(object):
             if sid['name'] == name:
                 return Airline(direction='SID', data=sid)
 
+    def sids(self):
+        for sid in self.data['SID']:
+            yield Airline(direction='SID', data=sid)
+
+    def stars(self):
+        for star in self.data['STAR']:
+            yield Airline(direction='STAR', data=star)
+
     def get_star(self, name):
         assert type(name) is str
         for star in self.data['STAR']:
@@ -42,8 +52,8 @@ class Airline(object):
         self.name = data['name']
         self.direction = direction
         self.RWY = data['RWY']
-        self.inAngle = data['RWYAngle'] if direction == 'SID' else data['InAngle']
-        self.outAngle = data['RWYAngle'] if direction == 'STAR' else data['OutAngle']
+        # self.inAngle = data['RWYAngle'] if direction == 'SID' else data['InAngle']
+        # self.outAngle = data['RWYAngle'] if direction == 'STAR' else data['OutAngle']
         self.RNAV = data['RNAV']
 
         self.points = self.convertRNAVtoUTMXY(self.RNAV)
@@ -58,6 +68,7 @@ class Airline(object):
 
         return points
 
+
     def parse_wgs84(self, wgs84str):
         pattern = (r'^(?P<NS>N|S)(?P<LatA>\d{1,2})\s(?P<LatM>\d{1,2}\.\d)\s'
                    r'(?P<EW>E|W)(?P<LonA>\d{1,3})\s(?P<LonM>\d{1,2}\.\d)$')
@@ -70,26 +81,29 @@ class Airline(object):
 
         return (lat, lon)
 
+    def interpolate(self):
+        p = self.points
+        v = self.get_velocity()
+        return trajectory(p, v)
+
     def get_states(self, length):
 
         qstate_x = []
         qstate_y = []
 
+        x, y = self.interpolate()
+
         x = map(lambda p: p[0], self.points)
         y = map(lambda p: p[1], self.points)
 
-        tck, u = interpolate.splprep([x, y], s=0, k=2)
-        unew = numpy.arange(0, 1.00, 0.01)
-        out = interpolate.splev(unew, tck)
-
         curr_len = 0.0
-        for i in range(len(out[0]) - 1):
-            curr_len += distance(out[0][i + 1], out[1][i + 1],
-                                 out[0][i], out[1][i])
+        for i in range(len(x) - 1):
+            curr_len += distance(x[i + 1], y[i + 1],
+                                 x[i], y[i])
 
             if curr_len > length:
-                qstate_x.append(out[0][i])
-                qstate_y.append(out[1][i])
+                qstate_x.append(x[i])
+                qstate_y.append(y[i])
                 curr_len = 0
 
         return (qstate_x, qstate_y)
@@ -103,6 +117,18 @@ class Airline(object):
         out = interpolate.splev(unew, tck)
 
         return out
+
+    def get_velocity(self):
+        V = []
+        for checkpoint in self.RNAV:
+            Vkt = float(checkpoint['speed'])
+            V.append(mph2mps(Vkt))
+
+        return V
+
+def mph2mps(v):
+    """ Convert miles per hour to meters per sec """
+    return (1.852 * v * 1000.0) / 3600.0
 
 def distance(x1, y1, x2, y2):
     dx = x2 - x1
@@ -145,14 +171,52 @@ def topology_complexity(star, sid):
 
     return kappa
 
+def airport_throughput(airport):
+    """ 
+        Compute complexity and throughput for each pair
+        of SID/STAR and average them to find out the
+        airport throughput.
+    """
+    C = 0.0
+    count = 0
+    for sid in airport.sids():
+        for star in airport.stars():
+            q = topology_complexity(sid, star)
+            Cr, Cm, Cp, P = complexity2throughput(1, q, 0.5)
+            # print("%s vs %s: %g(%g)" % (sid.name, star.name, Cr/2, q))
+            C += Cr/2
+            count +=1
+
+    print("total C = %g"  % (C/count))
+
+
 if __name__ == "__main__":
     data = yaml.load(open('airports/SVO.air').read())
     SVO = Airport(data=data)
 
-    besta_01 = SVO.get_star('BESTA 01')
-    besta_4g = SVO.get_sid('BESTA 4G')
+    airport_throughput(SVO)
 
-    print("kappa = %g" % topology_complexity(besta_01, besta_4g))
+    # pylab.figure()
+
+    # for star in SVO.data['STAR']:
+    #     p = SVO.get_star(star['name']).points
+    #     v = SVO.get_star(star['name']).get_velocity()
+    #     # pylab.plot(map(lambda p: p[0], p), map(lambda p: p[1], p), 'x')
+    #     x, y = trajectory(p, v)
+    #     pylab.plot(x, y)
+
+    # for sid in SVO.data['SID']:
+    #     p = SVO.get_sid(sid['name']).points
+    #     v = SVO.get_sid(sid['name']).get_velocity()
+    #     # pylab.plot(map(lambda p: p[0], p), map(lambda p: p[1], p), 'x')
+    #     x, y = trajectory(p, v)
+    #     pylab.plot(x, y)
+
+    # pylab.show()
+    # besta_01 = SVO.get_star('BESTA 01')
+    # besta_4g = SVO.get_sid('BESTA 4G')
+
+    # print("kappa = %g" % topology_complexity(besta_01, besta_4g))
     # pylab.figure()
 
     # points1 = besta_01.get_points()
