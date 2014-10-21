@@ -1,0 +1,902 @@
+iata_code: DME
+wgs84: N55 23.3 E037 54.7
+STAR:
+    - name: AKSINYINO 1A
+      RWY: 14R
+      RNAV:
+        - name: AKSINYINO
+          wgs84: N55 09.2 E038 17.3
+          speed: 250
+          at: FL100
+        - name: DD154
+          wgs84: N55 15.6 E037 52.5
+          speed: 250
+          at: FL80
+        - name: DD152
+          wgs84: N55 20.1 E037 47.1
+          speed: 220
+          at: FL70
+        - name: DD148
+          wgs84: N55 24.5 E037 41.8
+          speed: 220
+          at: FL60
+        - name: DD146
+          wgs84: N55 31.2 E037 33.7
+          speed: 220
+          at: 3550
+        - name: DD144
+          wgs84: N55 34.2 E037 41.6
+          speed: 185
+          at: 3550
+        - name: D10.5DMD
+          wgs84: N55 31.9 E037 44.3
+          speed: 185
+          at: 3220
+        - name: RWY 14R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+    - name: AKSINYINO 2A
+      RWY: 14L
+      RNAV:
+        - name: AKSINYINO
+          wgs84: N55 09.2 E038 17.3
+          speed: 250
+          at: FL90
+        - name: DD154
+          wgs84: N55 15.6 E037 52.5
+          speed: 250
+          at: FL70
+        - name: DD152
+          wgs84: N55 20.1 E037 47.1
+          speed: 220
+          at: FL60
+        - name: DD148
+          wgs84: N55 24.5 E037 41.8
+          speed: 220
+          at: 2520
+        - name: DD146
+          wgs84: N55 31.2 E037 33.7
+          speed: 220
+          at: 2520
+        - name: DD143
+          wgs84: N55 34.8 E037 43.1
+          speed: 185
+          at: 2520
+        - name: D6.9DMD
+          wgs84: N55 29.5 E037 49.6
+          speed: 185
+          at: 2200
+        - name: RWY 14L
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+    - name: AKSINYINO 1B
+      RWY: 14R
+      RNAV:
+        - name: AKSINYINO
+          wgs84: N55 09.2 E038 17.3
+          speed: 250
+          at: FL100
+        - name: DD153
+          wgs84: N55 18.2 E038 15.9
+          speed: 220
+          at: FL90
+        - name: DD151
+          wgs84: N55 22.7 E038 10.6
+          speed: 220
+          at: FL80
+        - name: DD149
+          wgs84: N55 27.1 E038 05.3
+          speed: 220
+          at: FL70
+        - name: DD147
+          wgs84: N55 31.6 E037 59.9
+          speed: 220
+          at: FL60
+        - name: DD145
+          wgs84: N55 38.2 E037 51.9
+          speed: 220
+          at: 3550
+        - name: DD144
+          wgs84: N55 34.2 E037 41.6
+          speed: 185
+          at: 3550
+        - name: D10.5DMD
+          wgs84: N55 31.9 E037 44.3
+          speed: 185
+          at: 3220
+        - name: RWY 14R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185         
+    - name: AKSINYINO 2B
+      RWY: 14L
+      RNAV:
+        - name: AKSINYINO
+          wgs84: N55 09.2 E038 17.3
+          speed: 250
+          at: FL90
+        - name: DD153
+          wgs84: N55 18.2 E038 15.9
+          speed: 220
+          at: FL80
+        - name: DD151
+          wgs84: N55 22.7 E038 10.6
+          speed: 220
+          at: FL70
+        - name: DD149
+          wgs84: N55 27.1 E038 05.3
+          speed: 220
+          at: FL60
+        - name: DD147
+          wgs84: N55 31.6 E037 59.9
+          speed: 220
+          at: 3510
+        - name: DD145
+          wgs84: N55 38.2 E037 51.9
+          speed: 220
+          at: 2520
+        - name: DD143
+          wgs84: N55 34.8 E037 43.1
+          speed: 185
+          at: 2520
+        - name: D6.9DMD
+          wgs84: N55 29.5 E037 49.6
+          speed: 185
+          at: 2200
+        - name: RWY 14L
+          wgs84: N55 23.3 E037 54.7
+          speed: 185        
+          
+    - name: OKREM 1B
+      RWY: 14R
+      RNAV:
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          speed: 250
+          at: FL100
+        - name: DD153
+          wgs84: N55 18.2 E038 15.9
+          speed: 220
+          at: FL90
+        - name: DD151
+          wgs84: N55 22.7 E038 10.6
+          speed: 220
+          at: FL80
+        - name: DD149
+          wgs84: N55 27.1 E038 05.3
+          speed: 220
+          at: FL70
+        - name: DD147
+          wgs84: N55 31.6 E037 59.9
+          speed: 220
+          at: FL60
+        - name: DD145
+          wgs84: N55 38.2 E037 51.9
+          speed: 220
+          at: 3550
+        - name: DD144
+          wgs84: N55 34.2 E037 41.6
+          speed: 185
+          at: 3550
+        - name: D10.5DMD
+          wgs84: N55 31.9 E037 44.3
+          speed: 185
+          at: 3220
+        - name: RWY 14R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+    - name: OKREM 2B
+      RWY: 14L
+      RNAV:
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          speed: 250
+          at: FL90
+        - name: DD153
+          wgs84: N55 18.2 E038 15.9
+          speed: 220
+          at: FL80
+        - name: DD151
+          wgs84: N55 22.7 E038 10.6
+          speed: 220
+          at: FL70
+        - name: DD149
+          wgs84: N55 27.1 E038 05.3
+          speed: 220
+          at: FL60
+        - name: DD147
+          wgs84: N55 31.6 E037 59.9
+          speed: 220
+          at: 3510
+        - name: DD145
+          wgs84: N55 38.2 E037 51.9
+          speed: 220
+          at: 2520
+        - name: DD143
+          wgs84: N55 34.8 E037 43.1
+          speed: 185
+          at: 2520
+        - name: D6.9DMD
+          wgs84: N55 29.5 E037 49.6
+          speed: 185
+          at: 2200
+        - name: RWY 14L
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+          
+    - name: OKREM 3B
+      RWY: 32R
+      RNAV:
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          speed: 250
+          at: FL90
+        - name: DD331
+          wgs84: N55 09.3 E038 26.4
+          speed: 230
+          at: FL80
+        - name: DD329
+          wgs84: N55 04.8 E038 31.7
+          speed: 230
+          at: FL80
+        - name: DD335
+          wgs84: N55 01.4 E038 23.0
+          speed: 230
+          at: FL70
+        - name: DD336
+          wgs84: N55 05.9 E038 17.7
+          speed: 220
+          at: FL60
+        - name: DD337
+          wgs84: N55 10.4 E038 12.4
+          speed: 220
+          at: 3480
+        - name: DD323
+          wgs84: N55 14.8 E038 07.1
+          speed: 185
+          at: 2490
+        - name: D5.3DMD
+          wgs84: N55 19.6 E038 01.4
+          speed: 185
+          at: 2160
+        - name: RWY 32R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+    - name: OKREM 4B
+      RWY: 32L
+      RNAV:
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          speed: 250
+          at: FL100
+        - name: DD331
+          wgs84: N55 09.3 E038 26.4
+          speed: 230
+          at: FL90
+        - name: DD329
+          wgs84: N55 04.8 E038 31.7
+          speed: 230
+          at: FL90
+        - name: DD327
+          wgs84: N55 00.8 E038 21.5
+          speed: 230
+          at: FL80
+        - name: DD326
+          wgs84: N55 05.3 E038 16.2
+          speed: 220
+          at: FL70
+        - name: DD325
+          wgs84: N55 09.8 E038 10.9
+          speed: 220
+          at: FL60
+        - name: DD324
+          wgs84: N55 14.2 E038 05.6
+          speed: 185
+          at: 3490
+        - name: D7.6DMD
+          wgs84: N55 17.1 E038 02.2
+          speed: 185
+          at: 2160
+        - name: RWY 32R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+
+    - name: SKURYGINO 1A
+      RWY: 14R
+      RNAV:
+        - name: SKURYGYNO
+          wgs84: N55 12.7 E037 21.9
+          speed: 250
+          at: FL100
+        - name: DD166
+          wgs84: N55 12.6 E037 44.7
+          speed: 220
+          at: FL90
+        - name: DD154
+          wgs84: N55 15.6 E037 52.5
+          speed: 220
+          at: FL80
+        - name: DD152
+          wgs84: N55 20.1 E037 47.1
+          speed: 220
+          at: FL70
+        - name: DD148
+          wgs84: N55 24.5 E037 41.8
+          speed: 220
+          at: FL60
+        - name: DD146
+          wgs84: N55 31.2 E037 33.7
+          speed: 220
+          at: 3550
+        - name: DD144
+          wgs84: N55 34.2 E037 41.6
+          speed: 185
+          at: 3550
+        - name: D10.5DMD
+          wgs84: N55 31.9 E037 44.3
+          speed: 185
+          at: 3220
+        - name: RWY 14R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+
+    - name: SKURYGINO 2A
+      RWY: 14L
+      RNAV:
+        - name: SKURYGYNO
+          wgs84: N55 12.7 E037 21.9
+          speed: 250
+          at: FL100
+        - name: DD166
+          wgs84: N55 12.6 E037 44.7
+          speed: 220
+          at: FL90
+        - name: DD154
+          wgs84: N55 15.6 E037 52.5
+          speed: 250
+          at: FL70
+        - name: DD152
+          wgs84: N55 20.1 E037 47.1
+          speed: 220
+          at: FL60
+        - name: DD148
+          wgs84: N55 24.5 E037 41.8
+          speed: 220
+          at: 2520
+        - name: DD146
+          wgs84: N55 31.2 E037 33.7
+          speed: 220
+          at: 2520
+        - name: DD143
+          wgs84: N55 34.8 E037 43.1
+          speed: 185
+          at: 2520
+        - name: D6.9DMD
+          wgs84: N55 29.5 E037 49.6
+          speed: 185
+          at: 2200
+        - name: RWY 14L
+          wgs84: N55 23.3 E037 54.7
+          speed: 185        
+
+    - name: SKURYGINO 3B
+      RWY: 32R
+      RNAV:
+        - name: SKURYGYNO
+          wgs84: N55 12.7 E037 21.9
+          speed: 250
+          at: FL90
+        - name: DD156
+          wgs84: N55 11.2 E037 57.8
+          speed: 230
+          at: FL90
+        - name: DD158
+          wgs84: N55 06.7 E038 03.1
+          speed: 230
+          at: FL90
+        - name: DD332
+          wgs84: N55 02.3 E038 08.4
+          speed: 230
+          at: FL90
+        - name: DD328
+          wgs84: N54 57.8 E038 13.6
+          speed: 230
+          at: FL90
+        - name: DD335
+          wgs84: N55 01.4 E038 23.0
+          speed: 230
+          at: FL70
+        - name: DD336
+          wgs84: N55 05.9 E038 17.7
+          speed: 220
+          at: FL60
+        - name: DD337
+          wgs84: N55 10.4 E038 12.4
+          speed: 220
+          at: 3480
+        - name: DD323
+          wgs84: N55 14.8 E038 07.1
+          speed: 185
+          at: 2490
+        - name: D5.3DMD
+          wgs84: N55 19.6 E038 01.4
+          speed: 185
+          at: 2160
+        - name: RWY 32R
+          wgs84: N55 23.3 E037 54.7
+          speed: 185
+          
+    - name: SKURYGINO 4B
+      RWY: 32L
+      RNAV:
+        - name: SKURYGYNO
+          wgs84: N55 12.7 E037 21.9
+          speed: 250
+          at: FL100
+        - name: DD156
+          wgs84: N55 11.2 E037 57.8
+          speed: 230
+          at: FL100
+        - name: DD158
+          wgs84: N55 06.7 E038 03.1
+          speed: 230
+          at: FL100
+        - name: DD332
+          wgs84: N55 02.3 E038 08.4
+          speed: 230
+          at: FL100
+        - name: DD328
+          wgs84: N54 57.8 E038 13.6
+          speed: 230
+          at: FL90
+        - name: DD327
+          wgs84: N55 00.8 E038 21.5
+          speed: 230
+          at: FL80
+        - name: DD326
+          wgs84: N55 05.3 E038 16.2
+          speed: 220
+          at: FL70
+        - name: DD325
+          wgs84: N55 09.8 E038 10.9
+          speed: 220
+          at: FL60
+        - name: DD324
+          wgs84: N55 14.2 E038 05.6
+          speed: 185
+          at: 3490
+        - name: D7.6DMD
+          wgs84: N55 17.1 E038 02.2
+          speed: 185
+          at: 2160
+        - name: RWY 32L
+          wgs84: N55 23.3 E037 54.7
+          speed: 185        
+SID:
+    - name: CERUSTI 14R
+      RWY: 14R
+      RWYAngle: 136
+      OutAngle: 151
+      RNAV:
+        - name: RWY 14R
+          angle: 136
+        - name: 113.3 DMD (A990/379)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7    
+        - name: D4.3 DMD(AOA1580/987)
+          angle: 345
+          length: 10
+        - name: unnamed point(A2570/1977)
+          angle: 068
+          length: 4
+          wgs84: N55 20.7 E037 49.4
+        - name: 113.3 DMD
+          angle: 068
+          wgs84: N55 23.3 E037 54.7
+          length: 14.5
+        - name: RAMEK
+          angle: 074
+          wgs84: N55 26.2 E038 19.5
+          length: 57
+        - name: CHERUSTI(FL60-FL410)
+          wgs84: N55 32.9 E039 59.8
+   
+    - name: CERUSTI 32G
+      RWY: 32L
+      RWYAngle: 316
+      OutAngle: 316
+      RNAV:
+        - name: RWY 32L
+          angle: 316          
+          wgs84:
+          length: RAMEK 26
+        - name: DMD6.5DME(AOA1580/987)
+          angle: 101
+          wgs84:
+        - name: RAMEK 26
+          angle: 074
+          wgs84: N55 26.2 E038 19.5
+          length: 57
+        - name: CHERUSTI(FL60-FL410)
+          wgs84: N55 32.9 E039 59.8
+
+
+    - name: CHERUSTI 32E
+      RWY: 32R
+      RWYAngle: 316
+      OutAngle: 316
+      RNAV:
+        - name: RWY 32R
+          angle: 316
+          angle: 096
+          wgs84:
+          length: 21
+        - name: RAMEK
+          angle: 074
+          wgs84: N55 26.2 E038 19.5
+          length: 57
+        - name: CHERUSTI(FL60-FL410)
+          wgs84: N55 32.9 E039 59.8
+
+    - name: GLOTAYEVO 14D
+      RWY: 14L
+      RWYAngle: 136
+      OutAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+        - name: 113.3 DMD(AOA990/379)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)
+          angle: 204
+          wgs84:
+          length: 11
+        - name: GLOTAYEVO
+          wgs84: N55 09.8 E037 47.9
+          
+    - name: GLOTAYEVO 14W
+      RWY: 14R
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84:
+          length: GLOTAYEVO 23
+        - name: DMD10.3DME(AOA2550/2957)
+          angle: 246
+          wgs84:
+        - name: GLOTAYEVO
+          wgs84: N55 09.8 E037 47.9
+          
+    - name: GLOTAYEVO 32D
+      RWY: 32R
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32R
+          angle: 316
+          wgs84:
+          length: D4.4DMD 20
+        - name: DMD6.5DME(AOA1580/789)
+          angle: 136
+          wgs84:
+        - name: D4.4DMD(AOAFL50)
+          angle: 177
+          wgs84: N55 20.3 E037 49.1
+          length: 11
+        - name: GLOTAYEVO
+          wgs84: N55 09.8 E037 47.9
+          
+    - name: GLOTAYEVO 32W
+      RWY: 32L
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32L
+          angle: 316
+          wgs84:
+          length: D4.4DMD 18
+        - name: DMD6.5DME(AOA1580/987)
+          angle: 136
+          wgs84:
+        - name: D4.4DMD(AOAFL50)
+          angle: 177
+          wgs84: N55 20.3 E037 49.1
+          length: 11
+        - name: GLOTAYEVO
+          wgs84: N55 09.8 E037 47.9
+          
+    - name: GLOTAYEVO 32R
+      RWY: 32R
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32R
+          angle: 316
+          wgs84:
+        - name: 113.3DMD(3480/2961)
+          angle: 186
+          wgs84: N55 23.3 E037 54.7
+          length: 14
+        - name: GLOTAYEVO
+          wgs84: N55 09.8 E037 47.9
+    
+    - name: KAMENKA 14D
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+          length: KAMENKA 51
+        - name: DMD10.3DME(AOA3550/2957)
+          angle: 263
+          wgs84:
+        - name: KAMENKA
+          wgs84: N55 13.3 E036 59.7
+
+    - name: KAMENKA 14W
+      RWY: 14R
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84:
+        - name: 113.3DMD(AOA990/397)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)
+          angle: 225
+          wgs84:
+          length: 35
+        - name: KAMENKA
+          wgs84: N55 13.3 E036 59.7
+
+    - name: KARTINO 14L
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+          length: 113.3DMD 27
+        - name: DMD10.3DME(AOA3510/2959)
+          angle: 334
+          wgs84:
+        - name: 113.3DMD
+          angle: 331
+          wgs84: N55 23.3 E037 54.7
+          length: 13
+        - name: KARTINO
+          wgs84: N55 35.3 E037 47.2
+          
+    - name: KARTINO 14E
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+          length: KARTINO 23
+        - name: unnamed point(A1090/497)
+          angle: 307
+        - name: KARTINO
+          wgs84: N55 35.3 E037 47.2
+          
+    - name: KARTINO 14W
+      RWY: 14R
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84:
+        - name: 113.3DMD(A990/397)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)
+          angle: 354
+          length: 10
+        - name: unnemrd point(AOA2570/1977)
+          angle: 354
+          length: 15
+        - name: KARTINO
+          wgs84: N55 35.3 E037 47.2
+          
+    - name: KARTINO 32D
+      RWY: 32R
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32R
+          angle: 316
+          wgs84:
+        - name: D6.5DMD(AOA1580/987)
+          angle: 336
+          length: 11
+        - name: KARTINO
+          wgs84: N55 35.3 E037 47.2
+          
+    - name: KARTINO 32W
+      RWY: 32L
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32L
+          angle: 316
+          wgs84:
+        - name: D6.5DMD(AOA1580/987)
+          angle: 348
+          length: 11
+        - name: KARTINO
+          wgs84: N55 35.3 E037 47.2
+          
+    - name: KLIMOVSK 14D
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+        - name: D10.3DMD (AOA3550/2957)
+          angle: 288
+          length: 36
+        - name: KLIMOVSK
+          wgs84: N55 21.1 E037 31.6
+          
+    - name: KLIMOVSK 14W
+      RWY: 14R
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84: 
+        - name: 113.3DMD(A990/397)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)
+          angle: 281
+          length: 17
+        - name: KLIMOVSK
+          wgs84: N55 21.1 E037 31.6
+
+    - name: KLIMOVSK 32D
+      RWY: 32R
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32R 
+          angle: 316
+          wgs84:
+          length: KLIMOVSK 19
+        - name: D6.5DME(AOA1580/987)
+          angle: 206
+        - name: KLIMOVSK
+          wgs84: N55 21.1 E037 31.6
+          
+    - name: KLIMOVSK 32W
+      RWY: 32L
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32L
+          angle: 316
+          wgs84: 
+          length: KLIMOVSK 18
+        - name: D6.5DME(AOA1580/987)
+          angle: 208
+        - name: KLIMOVSK
+          wgs84: N55 21.1 E037 31.6
+
+    - name: OKREM 14E
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84: 
+          angle: 091
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+
+    - name: OKREM 14G
+      RWY: 14R
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84:
+        - name: 113.3DMD(A990/397)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)          
+          angle: 079
+          length: 26
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          
+    - name: OKREM 14W
+      RWY: 14R
+      RWYANgle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14R
+          angle: 136
+          wgs84:
+        - name: 113.3DMD(A990/397)
+          angle: 151
+          wgs84: N55 23.3 E037 54.7
+        - name: D4.3DMD(AOA1580/987)
+          angle: 345
+          length: 10
+        - name: unnamed point (A2570/1977)          
+          angle: 068
+          wgs84: N55 20.7 E037 49.4
+          length: 4
+        - name: 113.3DMD
+          angle: 068
+          wgs84: N55 23.3 E037 54.7
+          length: 14.5
+        - name: RAMEK
+          angle: 113
+          wgs84: N55 26.2 E038 19.5
+          length: 15
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+          
+    - name: OKREM 32E
+      RWY: 32R
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32R
+          angle: 316
+          wgs84: length 21
+          angle: 096
+        - name: RAMEK
+          angle: 113
+          wgs84: N55 26.2 E038 19.5
+          length: 15
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+
+    - name: OKREM 32G
+      RWY: 32L
+      RWYAngle: 316
+      OUTAngle: 316
+      RNAV:
+        - name: 32L
+          angle: 316
+          wgs84:
+          length: 26
+          angle: 101
+        - name: RAMEK
+          angle: 113
+          wgs84: N55 26.2 E038 19.5
+          length: 15
+        - name: OKREM
+          wgs84: N55 18.0 E038 41.9
+
+    - name: RUGEL 14E
+      RWY: 14L
+      RWYAngle: 136
+      OUTAngle: 136
+      RNAV:
+        - name: 14L
+          angle: 136
+          wgs84:
+          angle: 336
+          length: 35
+        - name: RUGEL
+          wgs84: N55 51.9 E037 51.9
+          
