@@ -472,431 +472,395 @@ STAR:
           wgs84: N55 23.3 E037 54.7
           speed: 185        
 SID:
-    - name: CERUSTI 14R
+    - name: CERUSTI 14
       RWY: 14R
-      RWYAngle: 136
-      OutAngle: 151
       RNAV:
         - name: RWY 14R
-          angle: 136
-        - name: 113.3 DMD (A990/379)
-          angle: 151
           wgs84: N55 23.3 E037 54.7    
+          speed: 200
         - name: D4.3 DMD(AOA1580/987)
-          angle: 345
-          length: 10
-        - name: unnamed point(A2570/1977)
-          angle: 068
-          length: 4
+          speed: 200
+          wgs84: N55 18.3 E037 55.7 
+        - name: Unknown
           wgs84: N55 20.7 E037 49.4
+          speed: 200
         - name: 113.3 DMD
-          angle: 068
           wgs84: N55 23.3 E037 54.7
-          length: 14.5
+          speed: 200
         - name: RAMEK
-          angle: 074
           wgs84: N55 26.2 E038 19.5
-          length: 57
-        - name: CHERUSTI(FL60-FL410)
-          wgs84: N55 32.9 E039 59.8
-   
+          speed: 200
+        - name: CHERUSTI
+          wgs84: N55 32.9 E039 59.8  
     - name: CERUSTI 32G
       RWY: 32L
-      RWYAngle: 316
-      OutAngle: 316
       RNAV:
         - name: RWY 32L
-          angle: 316          
-          wgs84:
-          length: RAMEK 26
-        - name: DMD6.5DME(AOA1580/987)
-          angle: 101
-          wgs84:
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: DMD6.5DME
+          wgs84: N55 25.3 E037 54.7
+          speed: 200
         - name: RAMEK 26
-          angle: 074
           wgs84: N55 26.2 E038 19.5
-          length: 57
-        - name: CHERUSTI(FL60-FL410)
+          speed: 200
+        - name: CHERUSTI
           wgs84: N55 32.9 E039 59.8
-
-
+          speed: 200
     - name: CHERUSTI 32E
       RWY: 32R
-      RWYAngle: 316
-      OutAngle: 316
       RNAV:
         - name: RWY 32R
-          angle: 316
-          angle: 096
-          wgs84:
-          length: 21
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: noname
+          wgs84: N55 25.3 E037 54.7
+          speed: 200
         - name: RAMEK
           angle: 074
           wgs84: N55 26.2 E038 19.5
-          length: 57
-        - name: CHERUSTI(FL60-FL410)
+          speed: 200
+        - name: CHERUSTI
           wgs84: N55 32.9 E039 59.8
-
+          speed: 200
     - name: GLOTAYEVO 14D
       RWY: 14L
-      RWYAngle: 136
-      OutAngle: 136
       RNAV:
         - name: 14L
-          angle: 136
-          wgs84:
-        - name: 113.3 DMD(AOA990/379)
-          angle: 151
           wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)
-          angle: 204
-          wgs84:
-          length: 11
+          speed: 200
+        - name: D4.3DMD
+          wgs84: N55 28.3 E037 54.7
+          speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
-          
+          speed: 200
     - name: GLOTAYEVO 14W
       RWY: 14R
-      RWYAngle: 136
-      OUTAngle: 136
       RNAV:
         - name: 14R
-          angle: 136
-          wgs84:
-          length: GLOTAYEVO 23
-        - name: DMD10.3DME(AOA2550/2957)
-          angle: 246
-          wgs84:
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: DMD10.3DME
+          wgs84: N55 28.3 E037 54.7
+          speed: 200
         - name: GLOTAYEVO
-          wgs84: N55 09.8 E037 47.9
-          
+          wgs84: N55 09.8 E037 47.9         
     - name: GLOTAYEVO 32D
       RWY: 32R
-      RWYAngle: 316
-      OUTAngle: 316
       RNAV:
         - name: 32R
-          angle: 316
-          wgs84:
-          length: D4.4DMD 20
-        - name: DMD6.5DME(AOA1580/789)
-          angle: 136
-          wgs84:
-        - name: D4.4DMD(AOAFL50)
-          angle: 177
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: DMD6.5DME
+          wgs84: N55 20.3 E037 54.7
+          speed: 200
+        - name: D4.4DMD
           wgs84: N55 20.3 E037 49.1
-          length: 11
+          speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
-          
     - name: GLOTAYEVO 32W
       RWY: 32L
       RWYAngle: 316
       OUTAngle: 316
       RNAV:
         - name: 32L
-          angle: 316
-          wgs84:
-          length: D4.4DMD 18
-        - name: DMD6.5DME(AOA1580/987)
-          angle: 136
-          wgs84:
-        - name: D4.4DMD(AOAFL50)
-          angle: 177
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: DMD6.5DME
+          wgs84: N55 20.3 E037 54.7
+          speed: 200
+        - name: D4.4DMD
           wgs84: N55 20.3 E037 49.1
-          length: 11
+          speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
-          
     - name: GLOTAYEVO 32R
       RWY: 32R
-      RWYAngle: 316
-      OUTAngle: 316
       RNAV:
         - name: 32R
-          angle: 316
-          wgs84:
-        - name: 113.3DMD(3480/2961)
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: noname
+          wgs84: N55 25.3 E037 54.7
+        - name: 113.3DMD
           angle: 186
           wgs84: N55 23.3 E037 54.7
           length: 14
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
-    
     - name: KAMENKA 14D
       RWY: 14L
       RWYAngle: 136
       OUTAngle: 136
       RNAV:
         - name: 14L
-          angle: 136
-          wgs84:
-          length: KAMENKA 51
-        - name: DMD10.3DME(AOA3550/2957)
-          angle: 263
-          wgs84:
+          wgs84: N55 23.3 E037 54.7
+          speed: 200
+        - name: DMD10.3DME
+          wgs84: N55 20.3 E037 54.7
+          speed: 200
         - name: KAMENKA
           wgs84: N55 13.3 E036 59.7
-
+          speed: 200
     - name: KAMENKA 14W
       RWY: 14R
       RWYAngle: 136
       OUTAngle: 136
       RNAV:
-        - name: 14R
-          angle: 136
-          wgs84:
-        - name: 113.3DMD(AOA990/397)
-          angle: 151
+        - name: 14L
           wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)
+          speed: 200
+        - name: D4.3DMD
+          speed: 200
           angle: 225
-          wgs84:
-          length: 35
+          wgs84: N55 21.3 E037 54.7
         - name: KAMENKA
           wgs84: N55 13.3 E036 59.7
+          speed: 200
 
-    - name: KARTINO 14L
-      RWY: 14L
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14L
-          angle: 136
-          wgs84:
-          length: 113.3DMD 27
-        - name: DMD10.3DME(AOA3510/2959)
-          angle: 334
-          wgs84:
-        - name: 113.3DMD
-          angle: 331
-          wgs84: N55 23.3 E037 54.7
-          length: 13
-        - name: KARTINO
-          wgs84: N55 35.3 E037 47.2
-          
-    - name: KARTINO 14E
-      RWY: 14L
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14L
-          angle: 136
-          wgs84:
-          length: KARTINO 23
-        - name: unnamed point(A1090/497)
-          angle: 307
-        - name: KARTINO
-          wgs84: N55 35.3 E037 47.2
-          
-    - name: KARTINO 14W
-      RWY: 14R
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14R
-          angle: 136
-          wgs84:
-        - name: 113.3DMD(A990/397)
-          angle: 151
-          wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)
-          angle: 354
-          length: 10
-        - name: unnemrd point(AOA2570/1977)
-          angle: 354
-          length: 15
-        - name: KARTINO
-          wgs84: N55 35.3 E037 47.2
-          
-    - name: KARTINO 32D
-      RWY: 32R
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32R
-          angle: 316
-          wgs84:
-        - name: D6.5DMD(AOA1580/987)
-          angle: 336
-          length: 11
-        - name: KARTINO
-          wgs84: N55 35.3 E037 47.2
-          
-    - name: KARTINO 32W
-      RWY: 32L
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32L
-          angle: 316
-          wgs84:
-        - name: D6.5DMD(AOA1580/987)
-          angle: 348
-          length: 11
-        - name: KARTINO
-          wgs84: N55 35.3 E037 47.2
-          
-    - name: KLIMOVSK 14D
-      RWY: 14L
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14L
-          angle: 136
-          wgs84:
-        - name: D10.3DMD (AOA3550/2957)
-          angle: 288
-          length: 36
-        - name: KLIMOVSK
-          wgs84: N55 21.1 E037 31.6
-          
-    - name: KLIMOVSK 14W
-      RWY: 14R
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14R
-          angle: 136
-          wgs84: 
-        - name: 113.3DMD(A990/397)
-          angle: 151
-          wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)
-          angle: 281
-          length: 17
-        - name: KLIMOVSK
-          wgs84: N55 21.1 E037 31.6
+#    - name: KARTINO 14L
+#      RWY: 14L
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14L
+#          angle: 136
+#          wgs84:
+#          length: 113.3DMD 27
+#        - name: DMD10.3DME(AOA3510/2959)
+#          angle: 334
+#          wgs84:
+#        - name: 113.3DMD
+#          angle: 331
+#          wgs84: N55 23.3 E037 54.7
+#          length: 13
+#        - name: KARTINO
+#          wgs84: N55 35.3 E037 47.2
+#          
+#    - name: KARTINO 14E
+#      RWY: 14L
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14L
+#          angle: 136
+#          wgs84:
+#          length: KARTINO 23
+#        - name: unnamed point(A1090/497)
+#          angle: 307
+#        - name: KARTINO
+#          wgs84: N55 35.3 E037 47.2
+#          
+#    - name: KARTINO 14W
+#      RWY: 14R
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14R
+#          angle: 136
+#          wgs84:
+#        - name: 113.3DMD(A990/397)
+#          angle: 151
+#          wgs84: N55 23.3 E037 54.7
+#        - name: D4.3DMD(AOA1580/987)
+#          angle: 354
+#          length: 10
+#        - name: unnemrd point(AOA2570/1977)
+#          angle: 354
+#          length: 15
+#        - name: KARTINO
+#          wgs84: N55 35.3 E037 47.2
+#          
+#    - name: KARTINO 32D
+#      RWY: 32R
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32R
+#          angle: 316
+#          wgs84:
+#        - name: D6.5DMD(AOA1580/987)
+#          angle: 336
+#          length: 11
+#        - name: KARTINO
+#          wgs84: N55 35.3 E037 47.2
+#          
+#    - name: KARTINO 32W
+#      RWY: 32L
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32L
+#          angle: 316
+#          wgs84:
+#        - name: D6.5DMD(AOA1580/987)
+#          angle: 348
+#          length: 11
+#        - name: KARTINO
+#          wgs84: N55 35.3 E037 47.2
+#          
+#    - name: KLIMOVSK 14D
+#      RWY: 14L
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14L
+#          angle: 136
+#          wgs84:
+#        - name: D10.3DMD (AOA3550/2957)
+#          angle: 288
+#          length: 36
+#        - name: KLIMOVSK
+#          wgs84: N55 21.1 E037 31.6
+#          
+#    - name: KLIMOVSK 14W
+#      RWY: 14R
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14R
+#          angle: 136
+#          wgs84: 
+#        - name: 113.3DMD(A990/397)
+#          angle: 151
+#          wgs84: N55 23.3 E037 54.7
+#        - name: D4.3DMD(AOA1580/987)
+#          angle: 281
+#          length: 17
+#        - name: KLIMOVSK
+#          wgs84: N55 21.1 E037 31.6#
 
-    - name: KLIMOVSK 32D
-      RWY: 32R
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32R 
-          angle: 316
-          wgs84:
-          length: KLIMOVSK 19
-        - name: D6.5DME(AOA1580/987)
-          angle: 206
-        - name: KLIMOVSK
-          wgs84: N55 21.1 E037 31.6
-          
-    - name: KLIMOVSK 32W
-      RWY: 32L
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32L
-          angle: 316
-          wgs84: 
-          length: KLIMOVSK 18
-        - name: D6.5DME(AOA1580/987)
-          angle: 208
-        - name: KLIMOVSK
-          wgs84: N55 21.1 E037 31.6
+#    - name: KLIMOVSK 32D
+#      RWY: 32R
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32R 
+#          angle: 316
+#          wgs84:
+#          length: KLIMOVSK 19
+#        - name: D6.5DME(AOA1580/987)
+#          angle: 206
+#        - name: KLIMOVSK
+#          wgs84: N55 21.1 E037 31.6
+#          
+#    - name: KLIMOVSK 32W
+#      RWY: 32L
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32L
+#          angle: 316
+#          wgs84: 
+#          length: KLIMOVSK 18
+#        - name: D6.5DME(AOA1580/987)
+#          angle: 208
+#        - name: KLIMOVSK
+#          wgs84: N55 21.1 E037 31.6#
 
-    - name: OKREM 14E
-      RWY: 14L
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14L
-          angle: 136
-          wgs84: 
-          angle: 091
-        - name: OKREM
-          wgs84: N55 18.0 E038 41.9
+#    - name: OKREM 14E
+#      RWY: 14L
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14L
+#          angle: 136
+#          wgs84: 
+#          angle: 091
+#        - name: OKREM
+#          wgs84: N55 18.0 E038 41.9#
 
-    - name: OKREM 14G
-      RWY: 14R
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14R
-          angle: 136
-          wgs84:
-        - name: 113.3DMD(A990/397)
-          angle: 151
-          wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)          
-          angle: 079
-          length: 26
-        - name: OKREM
-          wgs84: N55 18.0 E038 41.9
-          
-    - name: OKREM 14W
-      RWY: 14R
-      RWYANgle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14R
-          angle: 136
-          wgs84:
-        - name: 113.3DMD(A990/397)
-          angle: 151
-          wgs84: N55 23.3 E037 54.7
-        - name: D4.3DMD(AOA1580/987)
-          angle: 345
-          length: 10
-        - name: unnamed point (A2570/1977)          
-          angle: 068
-          wgs84: N55 20.7 E037 49.4
-          length: 4
-        - name: 113.3DMD
-          angle: 068
-          wgs84: N55 23.3 E037 54.7
-          length: 14.5
-        - name: RAMEK
-          angle: 113
-          wgs84: N55 26.2 E038 19.5
-          length: 15
-        - name: OKREM
-          wgs84: N55 18.0 E038 41.9
-          
-    - name: OKREM 32E
-      RWY: 32R
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32R
-          angle: 316
-          wgs84: length 21
-          angle: 096
-        - name: RAMEK
-          angle: 113
-          wgs84: N55 26.2 E038 19.5
-          length: 15
-        - name: OKREM
-          wgs84: N55 18.0 E038 41.9
+#    - name: OKREM 14G
+#      RWY: 14R
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14R
+#          angle: 136
+#          wgs84:
+#        - name: 113.3DMD(A990/397)
+#          angle: 151
+#          wgs84: N55 23.3 E037 54.7
+#        - name: D4.3DMD(AOA1580/987)          
+#          angle: 079
+#          length: 26
+#        - name: OKREM
+#          wgs84: N55 18.0 E038 41.9
+#          
+#    - name: OKREM 14W
+#      RWY: 14R
+#      RWYANgle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14R
+#          angle: 136
+#          wgs84:
+#        - name: 113.3DMD(A990/397)
+#          angle: 151
+#          wgs84: N55 23.3 E037 54.7
+#        - name: D4.3DMD(AOA1580/987)
+#          angle: 345
+#          length: 10
+#        - name: unnamed point (A2570/1977)          
+#          angle: 068
+#          wgs84: N55 20.7 E037 49.4
+#          length: 4
+#        - name: 113.3DMD
+#          angle: 068
+#          wgs84: N55 23.3 E037 54.7
+#          length: 14.5
+#        - name: RAMEK
+#          angle: 113
+#          wgs84: N55 26.2 E038 19.5
+#          length: 15
+#        - name: OKREM
+#          wgs84: N55 18.0 E038 41.9
+#          
+#    - name: OKREM 32E
+#      RWY: 32R
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32R
+#          angle: 316
+#          wgs84: length 21
+#          angle: 096
+#        - name: RAMEK
+#          angle: 113
+#          wgs84: N55 26.2 E038 19.5
+#          length: 15
+#        - name: OKREM
+#          wgs84: N55 18.0 E038 41.9#
 
-    - name: OKREM 32G
-      RWY: 32L
-      RWYAngle: 316
-      OUTAngle: 316
-      RNAV:
-        - name: 32L
-          angle: 316
-          wgs84:
-          length: 26
-          angle: 101
-        - name: RAMEK
-          angle: 113
-          wgs84: N55 26.2 E038 19.5
-          length: 15
-        - name: OKREM
-          wgs84: N55 18.0 E038 41.9
+#    - name: OKREM 32G
+#      RWY: 32L
+#      RWYAngle: 316
+#      OUTAngle: 316
+#      RNAV:
+#        - name: 32L
+#          angle: 316
+#          wgs84:
+#          length: 26
+#          angle: 101
+#        - name: RAMEK
+#          angle: 113
+#          wgs84: N55 26.2 E038 19.5
+#          length: 15
+#        - name: OKREM
+#          wgs84: N55 18.0 E038 41.9#
 
-    - name: RUGEL 14E
-      RWY: 14L
-      RWYAngle: 136
-      OUTAngle: 136
-      RNAV:
-        - name: 14L
-          angle: 136
-          wgs84:
-          angle: 336
-          length: 35
-        - name: RUGEL
-          wgs84: N55 51.9 E037 51.9
+#    - name: RUGEL 14E
+#      RWY: 14L
+#      RWYAngle: 136
+#      OUTAngle: 136
+#      RNAV:
+#        - name: 14L
+#          angle: 136
+#          wgs84:
+#          angle: 336
+#          length: 35
+#        - name: RUGEL
+#          wgs84: N55 51.9 E037 51.9
           
