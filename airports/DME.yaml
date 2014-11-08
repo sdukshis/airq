@@ -491,7 +491,8 @@ SID:
           wgs84: N55 26.2 E038 19.5
           speed: 200
         - name: CHERUSTI
-          wgs84: N55 32.9 E039 59.8  
+          wgs84: N55 32.9 E039 59.8
+          speed: 200 
     - name: CERUSTI 32G
       RWY: 32L
       RNAV:
@@ -545,7 +546,8 @@ SID:
           wgs84: N55 28.3 E037 54.7
           speed: 200
         - name: GLOTAYEVO
-          wgs84: N55 09.8 E037 47.9         
+          wgs84: N55 09.8 E037 47.9 
+          speed: 200        
     - name: GLOTAYEVO 32D
       RWY: 32R
       RNAV:
@@ -560,6 +562,7 @@ SID:
           speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
+          speed: 200        
     - name: GLOTAYEVO 32W
       RWY: 32L
       RWYAngle: 316
@@ -576,6 +579,7 @@ SID:
           speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
+          speed: 200        
     - name: GLOTAYEVO 32R
       RWY: 32R
       RNAV:
@@ -584,12 +588,13 @@ SID:
           speed: 200
         - name: noname
           wgs84: N55 25.3 E037 54.7
+          speed: 200
         - name: 113.3DMD
-          angle: 186
           wgs84: N55 23.3 E037 54.7
-          length: 14
+          speed: 200
         - name: GLOTAYEVO
           wgs84: N55 09.8 E037 47.9
+          speed: 200        
     - name: KAMENKA 14D
       RWY: 14L
       RWYAngle: 136

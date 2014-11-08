@@ -740,3 +740,222 @@ STAR:
           wgs84: N55 49.5 E037 16.3
           speed: 230
 SID:
+      - name: DEDUM 3D
+        RWY: 01
+        RNAV:
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: WW015
+            wgs84: N55 35.8 E037 01.1
+            speed: 175
+          - name: ARSEP
+            wgs84: N55 42.3 E036 57.9
+            speed: 250
+          - name: DEDUM
+            wgs84: N55 50.0 E037 04.2
+            speed: 150
+      - name: IVANOVSOYE 3E
+        RWY: 01
+        RNAV:
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: ILS DME
+            wgs84: N55 34.7 E037 15.1
+            speed: 195
+          - name: ARSEP
+            wgs84: N55 42.3 E036 57.9
+            speed: 250
+          - name: IVANOVSOYE
+            wgs84: N55 51.7 E036 54.7
+            speed: 250
+      - name: BITSA 3D
+        RWY: 01
+        RNAV:
+          - name: WW014
+            wgs84: N55 42.8 E037 21.3
+            speed: 175
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: BITSA
+            wgs84: N55 34.0 E037 36.9
+            speed: 250
+      - name: BITSA 3E
+        RWY: 01
+        RNAV:
+          - name: WW014
+            wgs84: N55 42.8 E037 21.3
+            speed: 175
+          - name: WW018
+            wgs84: N55 34.3 E037 29.6
+            speed: 195
+          - name: BITSA
+            wgs84: N55 34.0 E037 36.9
+            speed: 250
+      - name: KLIMOVSK 3D
+        RWY: 01
+        RNAV:
+          - name: WW014
+            wgs84: N55 42.8 E037 21.3
+            speed: 175
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: KLIMOVSK
+            wgs84: N55 21.1 E037 31.6
+            speed: 250
+      - name: KLIMOVSK 3E
+        RWY: 01
+        RNAV:
+          - name: WW014
+            wgs84: N55 42.8 E037 21.3
+            speed: 175
+          - name: OTIS
+            wgs84: N55 30.3 E037 26.2
+            speed: 175
+          - name: KLIMOVSK
+            wgs84: N55 21.1 E037 31.6
+            speed: 250
+      - name: OKLIT 3D
+        RWY: 01
+        RNAV:
+          - name: WW014
+            wgs84: N55 42.8 E037 21.3
+            speed: 175
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 195
+          - name: OKLIT
+            wgs84: N55 50.0 E037 21.0
+            speed: 250
+      - name: BITSA 4E
+        RWY: 19
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 36.6 E037 16.4
+            speed: 175
+          - name: WW198
+            wgs84: N55 31.2 E037 21.4
+            speed: 195
+          - name: BITSA
+            wgs84: N55 34.0 E037 36.9
+            speed: 250
+      - name: KLIMOVSK 4E
+        RWY: 19
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 36.6 E037 16.4
+            speed: 175
+          - name: WW198
+            wgs84: N55 31.2 E037 21.4
+            speed: 195          
+          - name: KLIMOVSK
+            wgs84: N55 21.1 E037 31.6
+            speed: 250
+      - name: OKLIT 4E
+        RWY: 19
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 36.6 E037 16.4
+            speed: 175
+          - name: WW198
+            wgs84: N55 31.2 E037 21.4
+            speed: 195    
+          - name: OKLIT
+            wgs84: N55 50.0 E037 21.0
+            speed: 250
+      - name: BADNI 3D
+        RWY: 01
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: WW015
+            wgs84: N55 35.8 E037 01.1
+            speed: 195
+          - name: WW017
+            wgs84: N55 18.1 E037 00.2
+            speed: 150
+          - name: BADNI
+            wgs84: N55 16.5 E036 56.7
+            speed: 250
+      - name: BADNI 3E
+        RWY: 01
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: OSTIS
+            wgs84: N55 30.3 E037 26.2
+            speed: 195
+          - name: WW017
+            wgs84: N55 18.1 E037 00.2
+            speed: 150
+          - name: BADNI
+            wgs84: N55 16.5 E036 56.7
+            speed: 250
+      - name: KAMENKA 3D
+        RWY: 01
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: WW015
+            wgs84: N55 35.8 E037 01.1
+            speed: 195
+          - name: WW017
+            wgs84: N55 18.1 E037 00.2
+            speed: 150
+          - name: KAMENKA
+            wgs84: N55 13.3 E036 59.7
+            speed: 250
+      - name: KAMENKA 3E
+        RWY: 01
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 35.4 E037 15.5
+            speed: 175
+          - name: WW010
+            wgs84: N55 37.9 E037 17.6
+            speed: 175
+          - name: OSTIS
+            wgs84: N55 30.3 E037 26.2
+            speed: 195
+          - name: KAMENKA
+            wgs84: N55 13.3 E036 59.7
+            speed: 250
+      - name: BADNI 4D
+        RWY: 19
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 36.6 E037 16.4
+            speed: 175
+          - name: WW 197
+            wgs84: N55 33.2 E037 13.9
+            speed: 195
+          - name: BADNI
+            wgs84: N55 16.5 E036 56.7
+            speed: 250
+      - name: KAMENKA 4D
+        RWY: 19
+        RNAV:
+          - name: ILS DME
+            wgs84: N55 36.6 E037 16.4
+            speed: 175
+          - name: WW 197
+            wgs84: N55 33.2 E037 13.9
+            speed: 195
+          - name: KAMENKA
+            wgs84: N55 13.3 E036 59.7
+            speed: 250
