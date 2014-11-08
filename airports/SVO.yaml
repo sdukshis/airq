@@ -1,0 +1,766 @@
+iata_code: SVO
+wgs84: N55 57.6 E037 19.4
+STAR:
+    - name: BESTA 07
+      RWY: 07L
+      RNAV:
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 250
+        - name: GISIN
+          wgs84: N55 57.7 E037 20.9
+          speed: 250
+        - name: EE079
+          wgs84: N56 02.0 E037 13.9
+          speed: 220
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: BESTA 25
+      RWY: 25R
+      RNAV:
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 250
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25R
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: DEBUM 25
+      RWY: 25R
+      RNAV:
+        - name: DEDUM
+          wgs84: N55 50.0 E037 04.2
+          speed: 250
+        - name: EE259
+          wgs84: N55 55.2 E037 24.7
+          speed: 250
+        - name: EE258
+          wgs84: N55 59.9 E037 27.9
+          speed: 250
+        - name: EE257
+          wgs84: N56 04.6 E037 31.2
+          speed: 220
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25R
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: LATBI 07A
+      RWY: 07L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE082
+          wgs84: N56 16.8 E037 23.5
+          speed: 250
+        - name: EE081
+          wgs84: N56 11.6 E037 21.0
+          speed: 230
+        - name: EE079
+          wgs84: N56 02.0 E037 13.9
+          speed: 220
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: LATBI 1G
+      RWY: 07L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE082
+          wgs84: N56 16.8 E037 23.5
+          speed: 250
+        - name: EE081
+          wgs84: N56 11.6 E037 21.0
+          speed: 230
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: LATBI 07G
+      RWY: 07L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: EE083
+          wgs84: N56 15.3 E036 55.2 # CHECK ERROR
+          speed: 230
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: LATBI 25A
+      RWY: 25L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE264
+          wgs84: N56 16.6 E037 27.0
+          speed: 250
+        - name: EE263
+          wgs84: N56 11.3 E037 28.0
+          speed: 250
+        - name: EE257
+          wgs84: N56 04.6 E037 31.2
+          speed: 220
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25L
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: LATBI 25G
+      RWY: 25L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: EE266
+          wgs84: N56 19.5 E037 09.8
+          speed: 250
+        - name: EE264
+          wgs84: N56 16.6 E037 27.0
+          speed: 250
+        - name: EE263
+          wgs84: N56 11.3 E037 28.0
+          speed: 250
+        - name: EE257
+          wgs84: N56 04.6 E037 31.2
+          speed: 220
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25L
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: LATBI 2G
+      RWY: 25L
+      RNAV:
+        - name: LATBI
+          wgs84: N56 22.8 E036 49.8
+          speed: 250
+        - name: EE266
+          wgs84: N56 19.5 E037 09.8
+          speed: 250
+        - name: EE264
+          wgs84: N56 16.6 E037 27.0
+          speed: 250
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25L
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: OKLIT 07
+      RWY: 07L
+      RNAV:
+        - name: OKLIT
+          wgs84: N55 50.0 E037 21.0
+          speed: 250
+        - name: GISIN
+          wgs84: N55 57.7 E037 20.9
+          speed: 250
+        - name: EE079
+          wgs84: N56 02.0 E037 13.9
+          speed: 220
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: OKLIT 25
+      RWY: 25L
+      RNAV:
+        - name: OKLIT
+          wgs84: N55 50.0 E037 21.0
+          speed: 250
+        - name: EE259
+          wgs84: N55 55.2 E037 24.7
+          speed: 250
+        - name: EE258
+          wgs84: N55 59.9 E037 27.9
+          speed: 250
+        - name: EE257
+          wgs84: N56 04.6 E037 31.2
+          speed: 220
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25R
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: SAVELOVO 07B
+      RWY: 07L
+      RNAV:
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE083
+          wgs84: N56 15.3 E036 55.2 # CHECK ERROR
+          speed: 230
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: SAVELOVO 1G
+      RWY: 07L
+      RNAV:
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE082
+          wgs84: N56 16.8 E037 23.5
+          speed: 250
+        - name: EE081
+          wgs84: N56 11.6 E037 21.0
+          speed: 230
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: SAVELOVO 07G
+      RWY: 07L
+      RNAV:
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE082
+          wgs84: N56 16.8 E037 23.5
+          speed: 250
+        - name: EE081
+          wgs84: N56 11.6 E037 21.0
+          speed: 230
+        - name: EE079
+          wgs84: N56 02.0 E037 13.9
+          speed: 220
+        - name: EE078
+          wgs84: N56 00.7 E037 05.3
+          speed: 220
+        - name: EE077
+          wgs84: N55 59.4 E036 56.7
+          speed: 220
+        - name: EE076
+          wgs84: N55 54.4 E036 59.1
+          speed: 220
+        - name: EE074
+          wgs84: N55 55.8 E037 07.6
+          speed: 215
+        - name: EE072
+          wgs84: N55 56.9 E037 14.6
+          speed: 215
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 215
+    - name: SAVELOVO 25
+      RWY: 25L
+      RNAV:
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE264
+          wgs84: N56 16.6 E037 27.0
+          speed: 250
+        - name: EE263
+          wgs84: N56 11.3 E037 28.0
+          speed: 250
+        - name: EE257
+          wgs84: N56 04.6 E037 31.2
+          speed: 220
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25L
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+    - name: SAVELOVO 2G
+      RWY: 25L
+      RNAV:
+        - name: SAVELOVO
+          wgs84: N56 22.0 E037 25.9
+          speed: 250
+        - name: EE264
+          wgs84: N56 16.6 E037 27.0
+          speed: 250
+        - name: EE256
+          wgs84: N56 05.8 E037 39.8
+          speed: 220
+        - name: EE262
+          wgs84: N56 07.1 E037 48.5
+          speed: 220
+        - name: EE261
+          wgs84: N56 02.1 E037 50.8
+          speed: 220
+        - name: EE254
+          wgs84: N56 01.0 E037 42.1
+          speed: 215
+        - name: EE252
+          wgs84: N56 00.0 E037 35.2
+          speed: 215
+        - name: RWY 25L
+          wgs84: N55 59.2 E037 30.0
+          speed: 215
+SID:
+    - name: BESTA 3G
+      RWY: 07L
+      RWYAngle: 65
+      RNAV:
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 200
+        - name: EE701
+          wgs84: N56 01.9 E037 36.0
+          speed: 215
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 250
+    - name: KOSTINO 3G
+      RWY: 07L
+      RWYAngle: 65
+      RNAV:
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE701
+          wgs84: N56 01.9 E037 36.0
+          speed: 215
+        - name: KOSTINO
+          wgs84: N56 18.0 E037 42.9
+          speed: 250
+    - name: BESTA 4G
+      RWY: 25R
+      RWYAngle: 245
+      RNAV:
+        - name: RWY 25R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name:  tmp # FIXME
+          wgs84: N55 56.0 E037 15.0
+          speed: 185
+        - name: EE521
+          wgs84: N56 04.1 E037 14.0
+          speed: 185
+        - name: EE523
+          wgs84: N56 07.0 E037 29.5
+          speed: 185
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 185
+    - name: KOSTINO 4G
+      RWY: 25R
+      RWYAngle: 245
+      RNAV:
+        - name: RWY 25R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name:  tmp # FIXME
+          wgs84: N55 56.0 E037 15.0
+          speed: 185
+        - name: EE521
+          wgs84: N56 04.1 E037 14.0
+          speed: 185
+        - name: EE523
+          wgs84: N56 07.0 E037 29.5
+          speed: 185
+        - name: KOSTINO
+          wgs84: N56 18.0 E037 42.9
+          speed: 250
+
+    - name: BESTA 5G
+      RWY: 07R
+      RWYAngle: 65
+      RNAV:
+        - name: RWY 07R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE706
+          wgs84: N56 00.7 E037 41.0
+          speed: 185
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 185
+    - name: KOSTINO 5G
+      RWY: 07R
+      RWYAngle: 65
+      RNAV:
+        - name: RWY 07R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE706
+          wgs84: N56 00.7 E037 41.0
+          speed: 185
+        - name: EE702
+          wgs84: N56 08.3 E037 36.3
+          speed: 185
+        - name: KOSTINO
+          wgs84: N56 18.0 E037 42.9
+          speed: 250   
+    - name: BESTA 6G
+      RWY: 25L
+      RWYAngle: 245
+      RNAV:
+        - name: RWY 25L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE527
+          wgs84: N55 56.6 E037 13.6
+          speed: 185
+        - name: EE528
+          wgs84: N55 57.8 E037 00.8
+          speed: 185
+        - name: EE529
+          wgs84: N56 02.3 E037 19.3
+          speed: 185
+        - name: BESTA
+          wgs84: N55 55.0 E037 44.5
+          speed: 185
+    - name: KOSTINO 6G
+      RWY: 25L
+      RWYAngle: 245
+      RNAV:
+        - name: RWY 25L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE527
+          wgs84: N55 56.6 E037 13.6
+          speed: 185
+        - name: EE528 # TODO: must pass
+          wgs84: N55 57.8 E037 00.8
+          speed: 185
+        - name: KOSTINO
+          wgs84: N56 18.0 E037 42.9
+          speed: 250
+    - name: BUZHAROVO 3G
+      RWY: 07L
+      RNAV:
+        - name: EE701
+          wgs84: N56 01.9 E037 36.0
+          speed: 185
+        - name: EE702
+          wgs84: N56 08.3 E037 36.3
+          speed: 185
+        - name: EE703
+          wgs84: N55 59.9 E036 52.5
+          speed: 250
+        - name: BUZHAROVO
+          wgs84: N55 59.0 E036 47.9
+          speed: 250
+    - name: IVANOVSKOYE 3G
+      RWY: 07L
+      RNAV:
+        - name: EE701
+          wgs84: N56 01.9 E037 36.0
+          speed: 185
+        - name: EE702
+          wgs84: N56 08.3 E037 36.3
+          speed: 185
+        - name: EE703
+          wgs84: N55 59.9 E036 52.5
+          speed: 250
+        - name: IVANOVSKOYE
+          wgs84: N55 52.0 E036 54.9
+          speed: 250
+    - name: BUZHAROVO 4G
+      RWY: 25R
+      RNAV:
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: tmp # FIXME
+          wgs84: N55 56.0 E037 15.0
+          speed: 185
+        - name: EE521
+          wgs84: N56 04.1 E037 14.0
+          speed: 185
+        - name: EE522
+          wgs84: N56 08.8 E037 11.5
+          speed: 220
+        - name: EE524
+          wgs84: N56 00.8 E036 52.3
+          speed: 250      
+        - name: BUZHAROVO
+          wgs84: N55 59.0 E036 47.9
+          speed: 250
+    - name: IVANOVSKOYE 4G
+      RWY: 25R
+      RNAV:
+        - name: RWY 07L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: tmp # FIXME
+          wgs84: N55 56.0 E037 15.0
+          speed: 185
+        - name: EE521
+          wgs84: N56 04.1 E037 14.0
+          speed: 185
+        - name: EE522
+          wgs84: N56 08.8 E037 11.5
+          speed: 220
+        - name: EE524
+          wgs84: N56 00.8 E036 52.3
+          speed: 250      
+        - name: IVANOVSKOYE
+          wgs84: N55 52.0 E036 54.9
+          speed: 250
+    - name: BUZHAROVO 5G
+      RWY: 07R
+      RNAV:
+        - name: RWY 07R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE706
+          wgs84: N56 00.7 E037 41.0
+          speed: 185
+        - name: EE702
+          wgs84: N56 08.3 E037 36.3
+          speed: 185
+        - name: EE703
+          wgs84: N55 59.9 E036 52.5
+          speed: 250
+        - name: BUZHAROVO
+          wgs84: N55 59.0 E036 47.9
+          speed: 250
+    - name: IVANOVSKOYE 5G
+      RWY: 07R
+      RNAV:
+        - name: RWY 07R
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE706
+          wgs84: N56 00.7 E037 41.0
+          speed: 185
+        - name: EE702
+          wgs84: N56 08.3 E037 36.3
+          speed: 185
+        - name: EE703
+          wgs84: N55 59.9 E036 52.5
+          speed: 250   
+        - name: IVANOVSKOYE
+          wgs84: N55 52.0 E036 54.9
+          speed: 250
+    - name: BUZHAROVO 6G
+      RWY: 25L
+      RNAV:
+        - name: RWY 25L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE527
+          wgs84: N55 56.6 E037 13.6
+          speed: 185
+        - name: EE528 # TODO: must pass
+          wgs84: N55 57.8 E037 00.8
+          speed: 185
+        - name: BUZHAROVO
+          wgs84: N55 59.0 E036 47.9
+          speed: 250
+    - name: IVANOVSKOYE 6G
+      RWY: 25L
+      RNAV:
+        - name: RWY 25L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE527
+          wgs84: N55 56.6 E037 13.6
+          speed: 185
+        - name: EE528 # TODO: must pass
+          wgs84: N55 57.8 E037 00.8
+          speed: 185
+        - name: IVANOVSKOYE
+          wgs84: N55 52.0 E036 54.9
+          speed: 250
+    - name: DEDUM 6G
+      RWY: 25L
+      RNAV:
+        - name: RWY 25L
+          wgs84: N55 57.6 E037 19.4
+          speed: 185
+        - name: EE527
+          wgs84: N55 56.6 E037 13.6
+          speed: 185
+        - name: DEDUM
+          wgs84: N55 50.0 E037 04.2
+          speed: 250      

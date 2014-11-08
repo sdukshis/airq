@@ -1,0 +1,47 @@
+iata_code: AMS
+wgs84: N52 19.9 E004 45.0 
+SID:
+    - name: AMGOD 2X
+      RWY: 18C
+      RWYAngle: 183
+      OutAngle: 299
+      RNAV:
+        - name: EH080
+          wgs84: N52 17.5 E004 44.2
+        - name: EH051
+          wgs84: N52 14.6 E004 39.1
+        - name: EH009
+          wgs84: N52 13.4 E004 33.3
+        - name: EH028
+          wgs84: N52 21.5 E004 25.3
+        - name: BERGI
+          wgs84: N52 44.9 E004 21.5
+        - name: AMGOD
+          wgs84: N52 58.5 E003 41.1
+    - name: ANDIK 2F
+      RWY: 04
+      RWYAngle: 41
+      OutAngle: 15
+      RNAV:
+        - name: EH019
+          wgs84: N52 20.3 E004 50.2
+        - name: EH020
+          wgs84: N52 20.2 E004 55.7
+        - name: EH043
+          wgs84: N52 25.5 E005 07.9
+        - name: ANDIK
+          wgs84: N52 44.4 E005 16.2
+    - name: ANDIK 2E
+      RWY: 18L
+      RWYAngle: 183
+      OutAngle: 15
+      RNAV:
+        - name: EH037
+          wgs84: N52 15.5 E004 46.5
+        - name: EH024
+          wgs84: N52 15.2 E004 58.8
+        - name: PAM
+          wgs84: N52 20.1 E005 05.5
+        - name: ANDIK
+          wgs84: N52 44.4 E005 16.2
+STAR:
